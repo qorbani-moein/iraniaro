@@ -13,8 +13,11 @@
     window.onload = change_name;
 
     function change_name() {
-        const lbl_search = document.querySelectorAll(".city_categories .filter-option-inner-inner");
+
+        const lbl_search = document.querySelectorAll("#city_categories option");
         lbl_search[0].innerHTML = "کشور و شهر";
-        console.log(lbl_search);
+        // const lbl_search = document.querySelectorAll(".city_categories .filter-option-inner-inner");
+        // lbl_search[0].innerHTML = "کشور و شهر";
+        // console.log(lbl_search[]);
     }
 </script>
