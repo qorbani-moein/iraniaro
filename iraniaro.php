@@ -38,7 +38,8 @@ function query_page_footer()
 }
 
 function html(){
-    include ('inc/html.js');
+    console('html.js');
+    include("inc/html.js");
 }
 
 function console($str)
