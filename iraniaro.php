@@ -26,7 +26,7 @@ function query_page_footer()
     $current_page = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
     $page_home = 'https://' . $_SERVER['SERVER_NAME'] . '/';
 
-    console('hi');
+    // console('hi');
     if ($current_page == $page_home) {
         console('page_home');
     } 
@@ -38,7 +38,7 @@ function query_page_footer()
 }
 
 function html(){
-    include 'inc/html.js';
+    include ('inc/html.js');
 }
 
 function console($str)
