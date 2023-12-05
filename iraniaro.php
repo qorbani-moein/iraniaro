@@ -31,7 +31,7 @@ function query_page_footer()
     } 
     // elseif($products == substr($current_page,0,strlen($products))){
     //     console('page_products');
-    //     products_html();
+    //     products_html();h
     // }
     html();
 }
