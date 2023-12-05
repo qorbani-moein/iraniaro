@@ -1,5 +1,5 @@
 <script>
-    const lbl_search = document.querySelectorAll(".city_categories .filter-option-inner-inner");
+    const lbl_search = document.querySelectorAll(" .city_categories .filter-option-inner-inner");
     window.addEventListener("load", function() {
         const lbl_search = document.querySelectorAll(".city_categories .filter-option-inner-inner");
         // const lbl_inner_search = document.querySelectorAll(".main-search-form li.selected .selected span.text");
