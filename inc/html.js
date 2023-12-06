@@ -29,6 +29,7 @@
             if (tmp_text.search("شهر / محله")) {
                 tmp_text.replace("شهر / محله", "کشور / شهر");
             }
+            search_form[0].outerHTML = tmp_text;
         } catch (err) {
             console.log(err.message + " - " + err.name);
         }
