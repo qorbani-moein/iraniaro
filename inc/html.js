@@ -27,7 +27,7 @@
             let tmp_text = search_form[0].outerHTML;
 
             if (tmp_text.search("شهر / محله")) {
-                console.log("شهر / محله");
+                tmp_text.replace("شهر / محله", "کشور / شهر");
             }
         } catch (err) {
             console.log(err.message + " - " + err.name);
