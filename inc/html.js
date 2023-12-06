@@ -10,7 +10,7 @@
     //     console.log(lbl_search);
 
     // });
-    window.onload = change_name;
+    window.onload = replace_city_lbl;
 
     function change_name() {
 
@@ -20,4 +20,18 @@
         // lbl_search[0].innerHTML = "کشور و شهر";
         // console.log(lbl_search[]);
     }
+
+    function replace_city_lbl() {
+        try {
+            const search_form = document.querySelectorAll(".woocommerce-product-search");
+            const tmp_text = search_form[0];
+
+            if (tmp_text.search("شهر / محله")) {
+                console.log("شهر / محله");
+            }
+        } catch (err) {
+            console.log(err.message + " - " + err.name);
+        }
+    }
+    setTimeout(replace_city_lbl, 3000);
 </script>
