@@ -66,7 +66,7 @@
             document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .col-form-label")[0].innerHTML = "شهر";
             document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .filter-option-inner-inner")[0].innerHTML = "شهر";
         } catch (error) {
-
+            console.log("replace noooooo!");
         }
     }, 5000);
 </script>
