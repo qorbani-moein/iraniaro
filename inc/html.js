@@ -60,6 +60,10 @@
 
     // }
     setTimeout(() => {
+        change_name();
+    }, 500);
+
+    function change_name() {
         try {
             console.log("replace!");
             document.querySelectorAll("#charsoogh_submit_ad_show .city-select-row .col-form-label")[0].innerHTML = "کشور";
@@ -68,5 +72,5 @@
         } catch (error) {
             console.log("replace noooooo!");
         }
-    }, 5000);
+    }
 </script>
