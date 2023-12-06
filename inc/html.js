@@ -26,8 +26,8 @@
             const search_form = document.querySelectorAll(".woocommerce-product-search");
             let tmp_text = search_form[0].outerHTML;
 
-            if (search_form[0].outerHTML.search("شهر / محله")) {
-                search_form[0].outerHTML.replace("شهر / محله", "کشور / شهر");
+            if (document.querySelectorAll(".woocommerce-product-search")[0].outerHTML.search("شهر / محله")) {
+                document.querySelectorAll(".woocommerce-product-search")[0].outerHTML.replace("شهر / محله", "کشور / شهر");
                 console.log("yes replace");
             } else {
                 console.log("no replace");
