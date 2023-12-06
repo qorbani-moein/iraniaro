@@ -44,4 +44,14 @@
     // setTimeout(replace_city_lbl, 5000);
     // setTimeout(replace_city_lbl, 9000);
     // setTimeout(replace_city_lbl, 13000);
+
+
+    // ---------------------------------
+
+    window.onload = ad_change_name;
+
+    function ad_change_name() {
+        document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .col-form-label")[0].innerHTML = "کشور";
+    }
+    setTimeout(ad_change_name, 3000);
 </script>
