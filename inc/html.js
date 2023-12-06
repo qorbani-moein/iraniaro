@@ -27,7 +27,7 @@
             let tmp_text = search_form[0].outerHTML;
 
             if (document.querySelectorAll(".woocommerce-product-search")[0].outerHTML.search("شهر / محله")) {
-                console.log(document.querySelectorAll(".woocommerce-product-search")[0].outerHTML.replace("کشور / شهر", "شهر / محله"));
+                document.querySelectorAll(".woocommerce-product-search")[0].outerHTML.replace("کشور / شهر", "شهر / محله");
                 console.log("yes replace");
             } else {
                 console.log("no replace");
@@ -38,4 +38,9 @@
         }
     }
     setTimeout(replace_city_lbl, 3000);
+    setTimeout(replace_city_lbl, 7000);
+    setTimeout(replace_city_lbl, 13000);
+    setTimeout(replace_city_lbl, 5000);
+    setTimeout(replace_city_lbl, 9000);
+    setTimeout(replace_city_lbl, 13000);
 </script>
