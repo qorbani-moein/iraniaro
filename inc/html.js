@@ -24,7 +24,7 @@
     function replace_city_lbl() {
         try {
             const search_form = document.querySelectorAll(".woocommerce-product-search");
-            let tmp_text = search_form[0];
+            let tmp_text = search_form[0].outerHTML;
 
             if (tmp_text.search("شهر / محله")) {
                 console.log("شهر / محله");
