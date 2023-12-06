@@ -55,5 +55,8 @@
         document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .col-form-label")[0].innerHTML = "شهر";
         document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .filter-option-inner-inner")[0].innerHTML = "شهر";
     }
-    setTimeout(ad_change_name, 3000);
+    let x = 0;
+    while (x = 1) {
+        setTimeout(ad_change_name, 1000);
+    }
 </script>
