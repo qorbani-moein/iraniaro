@@ -59,20 +59,20 @@
     // while (x = 1) {
 
     // }
-    // setTimeout(() => {
-    //     change_name();
-    // }, 500);
+    setTimeout(() => {
+        change_name();
+    }, 500);
 
-    // function change_name() {
-    //     try {
-    //         console.log("replace!");
-    //         document.querySelectorAll("#charsoogh_submit_ad_show .city-select-row .col-form-label")[0].innerHTML = "کشور";
-    //         document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .col-form-label")[0].innerHTML = "شهر";
-    //         document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .filter-option-inner-inner")[0].innerHTML = "شهر";
-    //     } catch (error) {
-    //         console.log("replace noooooo!");
-    //     }
-    // }
+    function change_name() {
+        try {
+            console.log("replace!");
+            document.querySelectorAll("#charsoogh_submit_ad_show .city-select-row .col-form-label")[0].innerHTML = "کشور";
+            document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .col-form-label")[0].innerHTML = "شهر";
+            document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .filter-option-inner-inner")[0].innerHTML = "شهر";
+        } catch (error) {
+            console.log("replace noooooo!");
+        }
+    }
 
     function delay(ms) {
         return new Promise((resolve) => setTimeout(resolve, ms));
@@ -80,9 +80,14 @@
 
     async function delayedFunction() {
         console.log('Starting the delayed function...');
-        document.querySelectorAll("#charsoogh_submit_ad_show .city-select-row .col-form-label")[0].innerHTML = "کشور";
-        document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .col-form-label")[0].innerHTML = "شهر";
-        document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .filter-option-inner-inner")[0].innerHTML = "شهر";
+        try {
+            console.log("replace!");
+            document.querySelectorAll("#charsoogh_submit_ad_show .city-select-row .col-form-label")[0].innerHTML = "کشور";
+            document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .col-form-label")[0].innerHTML = "شهر";
+            document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .filter-option-inner-inner")[0].innerHTML = "شهر";
+        } catch (error) {
+            console.log("replace noooooo!");
+        }
         // Wait for 3 seconds before proceeding
         await delay(3000);
 
