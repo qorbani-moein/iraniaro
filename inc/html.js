@@ -60,6 +60,9 @@
 
     // }
     setTimeout(() => {
-        setTimeout(ad_change_name, 1000)
-    }, 1000)
+        console.log("replace!");
+        document.querySelectorAll("#charsoogh_submit_ad_show .city-select-row .col-form-label")[0].innerHTML = "کشور";
+        document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .col-form-label")[0].innerHTML = "شهر";
+        document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .filter-option-inner-inner")[0].innerHTML = "شهر";
+    }, 500);
 </script>
