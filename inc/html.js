@@ -10,7 +10,7 @@
     //     console.log(lbl_search);
 
     // });
-    window.onload = replace_city_lbl;
+    // window.onload = replace_city_lbl;
 
     function change_name() {
 
@@ -38,7 +38,7 @@
             console.log(err.message + " - " + err.name);
         }
     }
-    setTimeout(replace_city_lbl, 3000);
+    // setTimeout(replace_city_lbl, 3000);
     // setTimeout(replace_city_lbl, 7000);
     // setTimeout(replace_city_lbl, 13000);
     // setTimeout(replace_city_lbl, 5000);
