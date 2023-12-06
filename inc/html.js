@@ -28,6 +28,9 @@
 
             if (search_form[0].outerHTML.search("شهر / محله")) {
                 search_form[0].outerHTML.replace("شهر / محله", "کشور / شهر");
+                console.log("yes replace");
+            } else {
+                console.log("no replace");
             }
             // search_form[0].outerHTML = tmp_text;
         } catch (err) {
