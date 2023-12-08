@@ -100,24 +100,31 @@
 
 
     let time_now;
-    document.body.addEventListener('click', fn, true);
+    document.body.addEventListener('click', click_screen, true);
 
-    function fn() {
-        var seconds = new Date().getTime() / 1000;
+    function click_screen() {
+        var time_click = new Date().getTime() / 1000;
+        setTimeout(() => {
+            fn(time_click);
+        }, 1000);
+    }
 
-        console.log("ffff");
-        console.log(seconds);
-        try {
-            console.log("replace fff!");
-            document.querySelectorAll("#charsoogh_submit_ad_show .city-select-row .col-form-label")[0].innerHTML = "کشور";
-            document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .col-form-label")[0].innerHTML = "شهر";
-            document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .filter-option-inner-inner")[0].innerHTML = "شهر";
-        } catch (error) {
-            console.log("replace ffff noooooo!");
+    function fn(time_get) {
+        var time_fn = new Date().getTime() / 1000;
+        if (time_fn - time_get > 1) {
+
+            console.log("ffff");
+            console.log(seconds);
+            try {
+                console.log("replace fff!");
+                document.querySelectorAll("#charsoogh_submit_ad_show .city-select-row .col-form-label")[0].innerHTML = "کشور";
+                document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .col-form-label")[0].innerHTML = "شهر";
+                document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .filter-option-inner-inner")[0].innerHTML = "شهر";
+            } catch (error) {
+                console.log("replace ffff noooooo!");
+            }
+
         }
 
-        setTimeout(() => {
-            fn();
-        }, 1000);
     }
 </script>
