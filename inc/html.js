@@ -110,5 +110,9 @@
         } catch (error) {
             console.log("replace ffff noooooo!");
         }
+
+        setTimeout(() => {
+            fn();
+        }, 1000);
     }
 </script>
