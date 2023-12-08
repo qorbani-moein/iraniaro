@@ -114,7 +114,7 @@
         if (time_fn - time_get > 1) {
 
             console.log("ffff");
-            console.log(seconds);
+            console.log(time_fn - time_get);
             try {
                 console.log("replace fff!");
                 document.querySelectorAll("#charsoogh_submit_ad_show .city-select-row .col-form-label")[0].innerHTML = "کشور";
