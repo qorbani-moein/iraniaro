@@ -99,46 +99,29 @@
 
 
 
-    let time_now;
     document.body.addEventListener('click', click_screen, true);
 
     function click_screen() {
-        var time_click = new Date().getTime() / 1000;
-        fn(time_click);
-    }
-
-    let time_last_run;
-
-    function fn(time_get) {
-        if (time_last_run == "") {
-            time_last_run == 0;
-        }
-        var time_fn = new Date().getTime() / 1000;
-        // console.log("in fn");
-        // let if_time = time_fn - time_get;
-        // console.log(if_time);
-        if (time_get - time_last_run > 0.2) {
-            time_last_run = new Date().getTime() / 1000;
-
-            console.log("ffff");
-            console.log(time_fn - time_get);
-            try {
-                console.log("replace fff!");
-                document.querySelectorAll("#charsoogh_submit_ad_show .city-select-row .col-form-label")[0].innerHTML = "کشور";
-                document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .col-form-label")[0].innerHTML = "شهر";
-                if (document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .filter-option-inner-inner")[0].innerHTML == "محله") {
-                    document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .filter-option-inner-inner")[0].innerHTML = "شهر";
-                }
-            } catch (error) {
-                console.log("replace ffff noooooo!");
+        sleep(200);
+        console.log("ffff");
+        try {
+            console.log("replace fff!");
+            document.querySelectorAll("#charsoogh_submit_ad_show .city-select-row .col-form-label")[0].innerHTML = "کشور";
+            document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .col-form-label")[0].innerHTML = "شهر";
+            if (document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .filter-option-inner-inner")[0].innerHTML == "محله") {
+                document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .filter-option-inner-inner")[0].innerHTML = "شهر";
             }
-
+        } catch (error) {
+            console.log("replace ffff noooooo!");
         }
-        var time_click = new Date().getTime() / 1000;
         setTimeout(() => {
-            fn(time_click);
+            fn();
         }, 500);
 
+    }
+
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
     }
 </script>
 194
