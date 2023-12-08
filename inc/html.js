@@ -109,6 +109,7 @@
 
     function fn(time_get) {
         var time_fn = new Date().getTime() / 1000;
+        console.log("in fn");
         if (time_fn - time_get > 0.3) {
 
             console.log("ffff");
