@@ -122,12 +122,12 @@
             } catch (error) {
                 console.log("replace ffff noooooo!");
             }
-            setTimeout(() => {
-                var time_click = new Date().getTime() / 1000;
-                fn(time_click);
-            }, 500);
 
         }
+        setTimeout(() => {
+            var time_click = new Date().getTime() / 1000;
+            fn(time_click);
+        }, 500);
 
     }
 </script>
