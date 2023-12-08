@@ -109,10 +109,10 @@
 
     function fn(time_get) {
         var time_fn = new Date().getTime() / 1000;
-        console.log("in fn");
-        let if_time = time_fn - time_get;
-        console.log(if_time);
-        if (if_time) {
+        // console.log("in fn");
+        // let if_time = time_fn - time_get;
+        // console.log(if_time);
+        if (time_fn - time_get > 0.2) {
 
             console.log("ffff");
             console.log(time_fn - time_get);
@@ -120,7 +120,9 @@
                 console.log("replace fff!");
                 document.querySelectorAll("#charsoogh_submit_ad_show .city-select-row .col-form-label")[0].innerHTML = "کشور";
                 document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .col-form-label")[0].innerHTML = "شهر";
-                document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .filter-option-inner-inner")[0].innerHTML = "شهر";
+                if (document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .filter-option-inner-inner")[0].innerHTML == "محله") {
+                    document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .filter-option-inner-inner")[0].innerHTML = "شهر";
+                }
             } catch (error) {
                 console.log("replace ffff noooooo!");
             }
