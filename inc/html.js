@@ -104,9 +104,7 @@
 
     function click_screen() {
         var time_click = new Date().getTime() / 1000;
-        setTimeout(() => {
-            fn(time_click);
-        }, 300);
+        fn(time_click);
     }
 
     function fn(time_get) {
@@ -123,6 +121,10 @@
             } catch (error) {
                 console.log("replace ffff noooooo!");
             }
+            setTimeout(() => {
+                var time_click = new Date().getTime() / 1000;
+                fn(time_click);
+            }, 300);
 
         }
 
