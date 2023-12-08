@@ -106,12 +106,12 @@
         var time_click = new Date().getTime() / 1000;
         setTimeout(() => {
             fn(time_click);
-        }, 1000);
+        }, 300);
     }
 
     function fn(time_get) {
         var time_fn = new Date().getTime() / 1000;
-        if (time_fn - time_get > 1) {
+        if (time_fn - time_get > 0.3) {
 
             console.log("ffff");
             console.log(time_fn - time_get);
