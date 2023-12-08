@@ -101,8 +101,8 @@
 
     document.body.addEventListener('click', click_screen, true);
 
-    async function click_screen() {
-        await sleep(3000);
+    function click_screen() {
+        // sleep(2000);
         console.log("ffff");
         try {
             console.log("replace fff!");
@@ -120,7 +120,7 @@
 
     }
 
-    function sleep(ms) {
-        return new Promise(resolve => setTimeout(resolve, ms));
-    }
+    // function sleep(ms) {
+    //     return new Promise(resolve => setTimeout(resolve, ms));
+    // }
 </script>
