@@ -115,7 +115,7 @@
             console.log("replace ffff noooooo!");
         }
         setTimeout(() => {
-            fn();
+            click_screen();
         }, 500);
 
     }
