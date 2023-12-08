@@ -112,7 +112,8 @@
         // console.log("in fn");
         // let if_time = time_fn - time_get;
         // console.log(if_time);
-        if (time_fn - time_get > 0.2) {
+        if (time_fn - time_last_run < 0.2) {
+            var time_last_run = new Date().getTime() / 1000;
 
             console.log("ffff");
             console.log(time_fn - time_get);
@@ -135,3 +136,4 @@
 
     }
 </script>
+194
