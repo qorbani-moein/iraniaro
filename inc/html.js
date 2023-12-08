@@ -124,7 +124,7 @@
             setTimeout(() => {
                 var time_click = new Date().getTime() / 1000;
                 fn(time_click);
-            }, 300);
+            }, 500);
 
         }
 
