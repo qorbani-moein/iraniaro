@@ -96,4 +96,11 @@
 
     // Call the delayed function
     delayedFunction();
+
+
+    document.body.addEventListener('click', fn, true);
+
+    function fn() {
+        console.log("ffff");
+    }
 </script>
