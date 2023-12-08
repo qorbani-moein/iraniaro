@@ -102,7 +102,7 @@
     document.body.addEventListener('click', click_screen, true);
 
     function click_screen() {
-        sleep(200);
+        sleep(2000);
         console.log("ffff");
         try {
             console.log("replace fff!");
