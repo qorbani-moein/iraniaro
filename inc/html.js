@@ -98,10 +98,15 @@
     delayedFunction();
 
 
+
+    let time_now;
     document.body.addEventListener('click', fn, true);
 
     function fn() {
+        var seconds = new Date().getTime() / 1000;
+
         console.log("ffff");
+        console.log(seconds);
         try {
             console.log("replace fff!");
             document.querySelectorAll("#charsoogh_submit_ad_show .city-select-row .col-form-label")[0].innerHTML = "کشور";
