@@ -101,7 +101,7 @@
 
     document.body.addEventListener('click', click_screen, true);
 
-    function click_screen() {
+    async function click_screen() {
         await sleep(3000);
         console.log("ffff");
         try {
