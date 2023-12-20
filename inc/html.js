@@ -14,7 +14,8 @@
             const user_display_name = document.getElementById('user_display_name').value;
             if (user_display_name != "") {
                 console.log('user_display_name!');
-                if (user_display_name.startsWith("77")) {
+                console.log('user_display_name.indexOf("77")!' + user_display_name.indexOf("77"));
+                if (user_display_name.indexOf("77") = 0) {
                     document.querySelectorAll(".setup-content .title_sec_sh label.col-form-label")[0].innerHTML = "شناسه شما";
                 }
 
