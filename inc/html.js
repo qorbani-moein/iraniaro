@@ -11,6 +11,13 @@
             if (document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .filter-option-inner-inner")[0].innerHTML == "محله") {
                 document.querySelectorAll("#charsoogh_submit_ad_show .district-sec .filter-option-inner-inner")[0].innerHTML = "شهر";
             }
+            const user_display_name = document.getElementById('user_display_name').value;
+            if (user_display_name != "") {
+                if (user_display_name.startsWith("77")) {
+                    document.querySelectorAll(".setup-content .title_sec_sh label.col-form-label")[0].innerHTML = "شناسه شما";
+                }
+
+            }
         } catch (error) {
             //console.log("replace ffff noooooo!");
         }
