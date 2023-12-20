@@ -17,7 +17,7 @@
                 console.log('user_display_name.indexOf("77")!' + user_display_name.indexOf("77"));
                 if (user_display_name.indexOf("77") == 0) {
                     console.log('Yes Yes');
-                    document.querySelectorAll(".setup-content .title_sec_sh label.col-form-label")[0].innerHTML = "شناسه شما";
+                    document.querySelectorAll('.setup-content .row [for="phone"] ')[0].innerHTML = "شناسه شما";
                 }
 
             }
