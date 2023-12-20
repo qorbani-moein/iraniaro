@@ -35,11 +35,18 @@ function query_page_footer()
     //     products_html();
     // }
     html();
+    
 }
 
 function html(){
     console('html.js');
     include("inc/html.js");
+
+    if (is_user_logged_in()) {
+        $user_data = wp_get_current_user();
+        echo '<input id="user_display_name" value="' . esc_attr($user_data->display_name) . '" hidden>';
+    }
+    
 }
 
 function console($str)
@@ -48,6 +55,5 @@ function console($str)
     <script>
         console.log("moein - ' . $str  . '");
     </script>
-    
     ';
 }
