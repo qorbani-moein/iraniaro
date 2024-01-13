@@ -18,6 +18,24 @@ if (!defined('ABSPATH')) {
 }
 
 
+
+function query_page_header(){
+    $current_page = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+    $page_home = 'https://' . $_SERVER['SERVER_NAME'] . '/';
+
+    // console('hi');
+    // if ($current_page == $page_home) {
+    //     console('page_home');
+    // } 
+    html_header();
+}
+add_action('wp_header', 'query_page_header');
+
+function html_header(){
+    include("inc/ads.js");
+}
+
+
 add_action('wp_footer', 'query_page_footer');
 
 function query_page_footer()
@@ -34,11 +52,11 @@ function query_page_footer()
     //     console('page_products');
     //     products_html();
     // }
-    html();
+    html_footer();
     
 }
 
-function html(){
+function html_footer(){
     console('html.js');
     include("inc/html.js");
 
@@ -48,6 +66,8 @@ function html(){
     }
     
 }
+
+
 
 function console($str)
 {
