@@ -66,6 +66,7 @@ function html_footer(){
         echo '<input id="user_display_name" value="' . esc_attr($user_data->display_name) . '" hidden>';
     }
     
+    echo '<script src="https://iraniaro.com/wp-content/plugins/iraniaro.com/inc/ads.js" id="ads-js"></script>';
 }
 
 
